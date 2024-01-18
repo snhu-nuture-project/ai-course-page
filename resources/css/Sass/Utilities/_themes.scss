@@ -24,5 +24,9 @@ $oswald: "Oswald", sans-serif;
   
 
 .bg-lightgray {
-    background: #F9F9F9 !important;
+    background-color: #F9F9F9 !important;
+}
+
+.bg-primary {
+    background-color: $primary !important;
 }
