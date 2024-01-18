@@ -5,6 +5,7 @@ $heritage: #0a3370;
 $ink-blue: #00244e;
 $sky-blue:#009dea;
 $hero-blue: #2066a2;
+$lightgray: #F9F9F9;
 
 //Hover State
 $primary-hover: #fee097;
@@ -23,5 +24,5 @@ $oswald: "Oswald", sans-serif;
   
 
 .bg-lightgray {
-    background: #F9F9F9;
+    background: #F9F9F9 !important;
 }

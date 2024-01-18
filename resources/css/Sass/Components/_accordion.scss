@@ -7,10 +7,15 @@
     color: $heritage;
   }
   
+  .accordion-item {
+    border: none;
+
+  }
+  
   .accordion-button.collapsed::after {
     font-family: "FontAwesome";
     content: "\f067";
-    font-size: 1rem;
+    font-size: .7rem;
     color: #0a3370;
     float: right;
     background-image: none;
@@ -21,7 +26,31 @@
     content: "\f068";
     color: #0a3370;
     float: right;
-    font-size: 1.25rem;
+    font-size: .7rem;
     background-image: none;
     transform: none;
+  }
+
+  .complete-btn.collapsed::after {
+    background-color: $ink-blue;
+    color: #fff;
+    font-family: "FontAwesome";
+    content: "\f067";
+    font-size: .7rem;
+    float: right;
+    background-image: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .complete-btn:not(.collapsed)::after {
+    font-family: "FontAwesome";
+    content: "\f068";
+    color: #fff;
+    float: right;
+    font-size: .7rem;
+    background-image: none;
+    transform: none;
+    display: flex;
+    align-items: center;
   }

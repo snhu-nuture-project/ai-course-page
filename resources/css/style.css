@@ -15,7 +15,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background: #F9F9F9;
+  background: #F9F9F9 !important;
 }
 
 .ink-blue {
@@ -27,7 +27,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background: #F9F9F9;
+  background: #F9F9F9 !important;
 }
 
 .accordion-header {
@@ -37,10 +37,14 @@ $font-size-7xl: 4rem; /*64px */
   color: #0a3370;
 }
 
+.accordion-item {
+  border: none;
+}
+
 .accordion-button.collapsed::after {
   font-family: "FontAwesome";
   content: "\f067";
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #0a3370;
   float: right;
   background-image: none;
@@ -51,9 +55,33 @@ $font-size-7xl: 4rem; /*64px */
   content: "\f068";
   color: #0a3370;
   float: right;
-  font-size: 1.25rem;
+  font-size: 0.7rem;
   background-image: none;
   transform: none;
+}
+
+.complete-btn.collapsed::after {
+  background-color: #00244e;
+  color: #fff;
+  font-family: "FontAwesome";
+  content: "\f067";
+  font-size: 0.7rem;
+  float: right;
+  background-image: none;
+  display: flex;
+  align-items: center;
+}
+
+.complete-btn:not(.collapsed)::after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  color: #fff;
+  float: right;
+  font-size: 0.7rem;
+  background-image: none;
+  transform: none;
+  display: flex;
+  align-items: center;
 }
 
 /* Font size */
@@ -73,7 +101,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background: #F9F9F9;
+  background: #F9F9F9 !important;
 }
 
 /* Font size */
@@ -140,7 +168,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background: #F9F9F9;
+  background: #F9F9F9 !important;
 }
 
 .ink-blue {
@@ -152,7 +180,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background: #F9F9F9;
+  background: #F9F9F9 !important;
 }
 
 /* Font size */
@@ -163,22 +191,16 @@ $font-size-7xl: 4rem; /*64px */
 /* 36px */
 /* 40px  h1 tag* /
 $font-size-7xl: 4rem; /*64px */
-section {
-  margin: 5rem 0 5rem 0;
-}
-
 h1 {
   color: #0a3370;
   font-size: 2.5rem;
-  font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
 
 h2 {
-  margin-bottom: 1.5rem;
   color: #00244e;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -311,7 +333,7 @@ footer.mobile {
 }
 
 .bg-lightgray {
-  background: #F9F9F9;
+  background: #F9F9F9 !important;
 }
 
 /* Font size */
@@ -322,22 +344,16 @@ footer.mobile {
 /* 36px */
 /* 40px  h1 tag* /
 $font-size-7xl: 4rem; /*64px */
-section {
-  margin: 5rem 0 5rem 0;
-}
-
 h1 {
   color: #0a3370;
   font-size: 2.5rem;
-  font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
 
 h2 {
-  margin-bottom: 1.5rem;
   color: #00244e;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -392,4 +408,62 @@ a {
 }
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.meet-div {
+  position: relative;
+  height: 20vh; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This creates the parallax effect */
+  color: #fff; /* Set text color to contrast with the background */
+  background-image: url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/12801768-e416-4e88-b895-ed159e4c34ea.jpg);
+}
+
+.meet-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00244e;
+  opacity: 0.8; /* Adjust the overlay color and transparency */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+/* Add additional styling for your content within the meet-div if needed */
+.meet-div h1 {
+  margin: 0;
+  padding: 20px;
+  z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.main {
+  background: linear-gradient(#fdb913 20vh, #fff 20vh); /* Use a gradient to achieve the desired effect */
+  background-size: 100% 100%;
+}
+
+.form-container {
+  box-shadow: 0 2px 8px;
+  border-radius: 9px;
+}
+
+.form-group {
+  margin-bottom: 1rem !important;
+}
+
+.discount {
+  background-color: #2066a2;
+}
+
+.complete-btn {
+  background-color: #00244e !important;
+  color: #fff !important;
+}
+
+.accordion-btn-content {
+  background-color: #F9F9F9;
+  color: gray;
+  font-weight: bolder;
 }/*# sourceMappingURL=style.css.map */

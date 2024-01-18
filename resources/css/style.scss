@@ -16,13 +16,65 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
+.meet-div {
+  position: relative;
+  height: 20vh; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This creates the parallax effect */
+  color: #fff; /* Set text color to contrast with the background */
+  background-image: url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/12801768-e416-4e88-b895-ed159e4c34ea.jpg);
+}
+
+.meet-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $ink-blue;
+  opacity: 0.8;/* Adjust the overlay color and transparency */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+/* Add additional styling for your content within the meet-div if needed */
+.meet-div h1 {
+  margin: 0;
+  padding: 20px;
+  z-index: 2; /* Ensure the content is above the overlay */
+}
 
 
+.main { 
+  background: linear-gradient(#fdb913 20vh, #fff 20vh); /* Use a gradient to achieve the desired effect */
+  background-size: 100% 100%; 
+}
 
+.form-container {
+  box-shadow: 0 2px 8px;
+  border-radius: 9px;
+}
 
+.form-group {
+  margin-bottom: 1rem !important;
+}
   
+.discount {
+  background-color: $hero-blue;
+}
+
+.complete-btn {
+  background-color: $ink-blue !important;
+  color: #fff !important;
+}
   
-  
+.accordion-btn-content {
+  background-color: $lightgray;
+  color: gray;
+  font-weight: bolder;
+}
+
  
   
   
