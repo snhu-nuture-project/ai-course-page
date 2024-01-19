@@ -15,7 +15,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background-color: #F9F9F9 !important;
+  background-color: #EFEFEF !important;
 }
 
 .bg-primary {
@@ -31,7 +31,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background-color: #F9F9F9 !important;
+  background-color: #EFEFEF !important;
 }
 
 .bg-primary {
@@ -49,6 +49,11 @@ $font-size-7xl: 4rem; /*64px */
   border: none;
 }
 
+.accordion-body {
+  background-color: #EFEFEF;
+  padding-top: 0;
+}
+
 .accordion-button.collapsed::after {
   font-family: "FontAwesome";
   content: "\f067";
@@ -56,6 +61,11 @@ $font-size-7xl: 4rem; /*64px */
   color: #0a3370;
   float: right;
   background-image: none;
+}
+
+.accordion-btn-content:not(.collapsed) {
+  background-color: #EFEFEF;
+  box-shadow: none;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -109,7 +119,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background-color: #F9F9F9 !important;
+  background-color: #EFEFEF !important;
 }
 
 .bg-primary {
@@ -180,7 +190,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background-color: #F9F9F9 !important;
+  background-color: #EFEFEF !important;
 }
 
 .bg-primary {
@@ -196,7 +206,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .bg-lightgray {
-  background-color: #F9F9F9 !important;
+  background-color: #EFEFEF !important;
 }
 
 .bg-primary {
@@ -218,7 +228,7 @@ h1 {
 }
 
 h2 {
-  color: #00244e;
+  color: #0a3370;
   font-weight: 700;
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
@@ -231,17 +241,17 @@ h3 {
   font-weight: 900;
 }
 
+h5 {
+  color: #727577;
+}
+
 p,
 li {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #666666;
+  color: #727577;
   line-height: 1.5;
-}
-
-li {
-  margin-bottom: 15px;
 }
 
 a.head-link {
@@ -315,7 +325,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 footer {
-  background-color: #00244E !important;
+  background-color: #00244e !important;
   color: #FFFFFF;
 }
 
@@ -332,7 +342,7 @@ footer.mobile {
 }
 
 .navbar {
-  background-color: #00244e;
+  background-color: #0a3370;
 }
 
 @media only screen and (max-width: 576px) {
@@ -353,7 +363,7 @@ footer.mobile {
 }
 
 .bg-lightgray {
-  background-color: #F9F9F9 !important;
+  background-color: #EFEFEF !important;
 }
 
 .bg-primary {
@@ -375,7 +385,7 @@ h1 {
 }
 
 h2 {
-  color: #00244e;
+  color: #0a3370;
   font-weight: 700;
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
@@ -388,17 +398,17 @@ h3 {
   font-weight: 900;
 }
 
+h5 {
+  color: #727577;
+}
+
 p,
 li {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #666666;
+  color: #727577;
   line-height: 1.5;
-}
-
-li {
-  margin-bottom: 15px;
 }
 
 a.head-link {
@@ -439,7 +449,6 @@ body {
   height: 20vh; /* Adjust the height as needed */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* This creates the parallax effect */
   color: #fff; /* Set text color to contrast with the background */
   background-image: url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/12801768-e416-4e88-b895-ed159e4c34ea.jpg);
 }
@@ -478,7 +487,8 @@ body {
 }
 
 .discount {
-  background-color: #2066a2;
+  background: linear-gradient(#fff 6rem, #2066a2 6rem);
+  position: relative;
 }
 
 .complete-btn {
@@ -487,11 +497,20 @@ body {
 }
 
 .accordion-btn-content {
-  background-color: #F9F9F9;
-  color: gray;
   font-weight: bolder;
 }
 
 .clock-icon1 {
   width: 6%;
+}
+
+.clock-icon2 {
+  width: 8%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.courses-li {
+  color: #0a3370;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

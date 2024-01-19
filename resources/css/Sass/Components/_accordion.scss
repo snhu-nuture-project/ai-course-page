@@ -11,7 +11,10 @@
     border: none;
 
   }
-  
+  .accordion-body {
+    background-color: $warm-grey;
+    padding-top: 0;
+  }
   .accordion-button.collapsed::after {
     font-family: "FontAwesome";
     content: "\f067";
@@ -20,7 +23,11 @@
     float: right;
     background-image: none;
   }
-  
+  .accordion-btn-content:not(.collapsed) {
+    background-color: $warm-grey;
+    box-shadow: none;
+  }
+
   .accordion-button:not(.collapsed)::after {
     font-family: "FontAwesome";
     content: "\f068";

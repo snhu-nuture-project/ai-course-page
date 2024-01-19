@@ -21,7 +21,6 @@ body {
   height: 20vh; /* Adjust the height as needed */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* This creates the parallax effect */
   color: #fff; /* Set text color to contrast with the background */
   background-image: url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/12801768-e416-4e88-b895-ed159e4c34ea.jpg);
 }
@@ -61,8 +60,12 @@ body {
 }
   
 .discount {
-  background-color: $hero-blue;
+  background: linear-gradient(#fff 6rem, $hero-blue 6rem);
+  position: relative;
 }
+
+
+
 
 .complete-btn {
   background-color: $ink-blue !important;
@@ -70,15 +73,24 @@ body {
 }
   
 .accordion-btn-content {
-  background-color: $lightgray;
-  color: gray;
   font-weight: bolder;
 }
 
  .clock-icon1 {
   width: 6%;
  }
+
+ .clock-icon2 {
+  width: 8%;
+  height: auto;
+  margin-bottom: 20px; 
+ }
   
+
+ .courses-li {
+  color: $heritage;
+  font-weight: bold;
+ }
   
  
   

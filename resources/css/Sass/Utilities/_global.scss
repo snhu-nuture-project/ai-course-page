@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-  color: $ink-blue;
+  color: $heritage;
   font-weight: 700; 
   font-size: $font-size-4xl;
   font-family: $oswald;
@@ -23,18 +23,20 @@ h3 {
   font-weight: 900;
 }
 
+h5 {
+  color: #727577;
+}
+
 p,
 li {
   font-family: $open-sans;
   font-size: $font-size-md;
   font-weight: 400;
-  color: #666666;
+  color: #727577;
   line-height: 1.5;
 }
 
-li {
-    margin-bottom: 15px;
-}
+
 
 a.head-link {
   font-size: $font-size-md;
